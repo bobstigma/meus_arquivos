@@ -1,0 +1,111 @@
+	h1 {
+	  font-family: 'Raleway', sans-serif;
+	  color: #222222;
+	}
+
+	h2 {
+	  font-family: 'PT Sans', sans-serif;
+	  font-size: 20px;
+	  font-style: italic;
+	  color: #2F8DE3;
+	}
+
+	h3 {
+	  font-size: 20px;
+	  font-family: 'Raleway', sans-serif;
+	}
+
+	h4{
+		font-size: 15px;
+		font-family: 'Raleway', sans-serif;
+		display: flex;
+		margin-left: 400px;
+	}
+
+	body {
+	  	margin: 0;
+		padding: 0;
+		background-color: #696969;
+	}
+
+	.head {
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 70%;
+	  height: 320px;
+	  background-image: url('../images/bob.jpg');  
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  text-align: center;
+	}
+
+	.content {
+	  width: 70%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  background-color: #f4f4f4;
+	}
+
+	.content-title {
+	  text-align: center;
+	  padding-top: 20px;
+	}
+
+	.content-subtitle {
+	  text-align:center;
+	  padding-bottom: 20px;
+	}
+
+	#content-icons, 
+	img{
+		width: 20px;
+		height: 20px;
+	}
+
+	hr {
+	  background-color: #2F8DE3;
+	  width: 70%;
+	}
+
+	.timeline {
+	  padding-left: 60px;
+	  padding-right: 60px;
+	}
+
+	.timeline-title {
+	  padding-top: 50px;
+	  padding-bottom: 30px;
+	}
+
+	.timeline-list-item {
+	  font-family: 'PT Sans', sans-serif;
+	}
+
+	blockquote p{
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 25px;
+	  color: #2F8DE3;
+	  text-align: center;
+	}
+
+	blockquote footer {
+	  margin-right: 40px;
+	  text-align: right;
+	}
+
+	.more-info {
+	  padding-top:10px;
+	  padding-left:30px;
+	  padding-right: 30px;
+	  padding-bottom: 20px;
+	}
+
+	a{
+		text-decoration: none;
+		color: #2F8DE3;
+	}
+
+	a:hover{
+		text-decoration: none;
+		color: #483D8B;
+	}

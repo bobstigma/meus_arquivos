@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 fdd40ba04ca22ed158d689bb75d0b32b1f34d4d4 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560957609 -0300	commit (initial): Primeiro commit
+fdd40ba04ca22ed158d689bb75d0b32b1f34d4d4 747472eddf0afad5118ea20111b49c597c98bc9e Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560957993 -0300	commit: Criando os arquivos principais index e style. Bem como modificando o README
+747472eddf0afad5118ea20111b49c597c98bc9e 77b65dab0c62e6a5b16c9f289919ca5dd9742e9c Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560971257 -0300	commit: Adicionei o Index e alterei o README
+77b65dab0c62e6a5b16c9f289919ca5dd9742e9c 747472eddf0afad5118ea20111b49c597c98bc9e Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560971655 -0300	reset: moving to 747472eddf0afad5118ea20111b49c597c98bc9e
+747472eddf0afad5118ea20111b49c597c98bc9e eb5ee3cd80530dea9661589d723384694f5ef6db Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560971816 -0300	commit: Criado o style2 e feita alterações no README
+eb5ee3cd80530dea9661589d723384694f5ef6db 747472eddf0afad5118ea20111b49c597c98bc9e Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560972126 -0300	reset: moving to 747472eddf0afad5118ea20111b49c597c98bc9e
+747472eddf0afad5118ea20111b49c597c98bc9e d045222404ee2c68db53ff3dd659168914eaadc3 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560981990 -0300	commit: Criando o Style.css
+d045222404ee2c68db53ff3dd659168914eaadc3 d045222404ee2c68db53ff3dd659168914eaadc3 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560982687 -0300	checkout: moving from master to teste
+d045222404ee2c68db53ff3dd659168914eaadc3 26e5d1222f2ea33a4d4674e19cd3baf2a75594e3 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560982856 -0300	commit: Testando o novo branch
+26e5d1222f2ea33a4d4674e19cd3baf2a75594e3 d045222404ee2c68db53ff3dd659168914eaadc3 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560986800 -0300	checkout: moving from teste to master
+d045222404ee2c68db53ff3dd659168914eaadc3 2cfdd0c6df3a5e0f64728825662ea318ae8ce12f Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560987072 -0300	commit: Alterando o README
+2cfdd0c6df3a5e0f64728825662ea318ae8ce12f 26e5d1222f2ea33a4d4674e19cd3baf2a75594e3 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560987326 -0300	checkout: moving from master to teste
+26e5d1222f2ea33a4d4674e19cd3baf2a75594e3 fffa94c90a619b22060f88c5f1c77807c57ae05b Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560987393 -0300	commit: Alteração README TESTE
+fffa94c90a619b22060f88c5f1c77807c57ae05b 2cfdd0c6df3a5e0f64728825662ea318ae8ce12f Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560987441 -0300	checkout: moving from teste to master
+2cfdd0c6df3a5e0f64728825662ea318ae8ce12f fffa94c90a619b22060f88c5f1c77807c57ae05b Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560987455 -0300	checkout: moving from master to teste
+fffa94c90a619b22060f88c5f1c77807c57ae05b 2cfdd0c6df3a5e0f64728825662ea318ae8ce12f Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1560992854 -0300	checkout: moving from teste to master
+2cfdd0c6df3a5e0f64728825662ea318ae8ce12f e9d0b25b4e6841834fed5bb0ffa10e6811f25bbc Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561037538 -0300	commit: Atualizando o README mais uma vez
+e9d0b25b4e6841834fed5bb0ffa10e6811f25bbc 8616ea9038e6983c076913327775637d92ad984b Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561039162 -0300	commit: Inserindo o Index.html
+8616ea9038e6983c076913327775637d92ad984b a2a249989e6f677136b06f25cd71f4235842fae6 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561039519 -0300	commit: Adicionando o JS
+a2a249989e6f677136b06f25cd71f4235842fae6 5a944220d1ae0592b391e1123d6174046d899bdc Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561065235 -0300	commit: Adicionando o GITINORE no projeto
+5a944220d1ae0592b391e1123d6174046d899bdc 9ae58cff58a925f064fa031c442bcb520a91a5df Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561065790 -0300	commit: Nova funcionalidade X
+9ae58cff58a925f064fa031c442bcb520a91a5df 8b4416a8b0a0f70a95e0c8eeb9543b84dc97c794 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561065946 -0300	revert: Revert "Nova funcionalidade X"
+8b4416a8b0a0f70a95e0c8eeb9543b84dc97c794 fffa94c90a619b22060f88c5f1c77807c57ae05b Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561066482 -0300	checkout: moving from master to teste
+fffa94c90a619b22060f88c5f1c77807c57ae05b 8b4416a8b0a0f70a95e0c8eeb9543b84dc97c794 Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561131352 -0300	checkout: moving from teste to master
+8b4416a8b0a0f70a95e0c8eeb9543b84dc97c794 e52c4016c008dacf163f8a031fce9dd3c4ebcc1a Wanderlei Augusto <wanderlei.augusto1@gmail.com> 1561131811 -0300	pull origin master: Fast-forward

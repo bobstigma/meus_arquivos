@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="content">
+        <div class="menu_esquerdo">
+            <ul>
+                <li>
+                    Início
+                </li>
+                <li class="active">
+                    Formulário
+                </li>
+                <li>
+                    Contato
+                </li>
+            </ul>
+        </div>
+
+        <div class="formulario">
+            <div class="titulo">
+                <h1>Cadastro de Alunos</h1>
+                <hr>
+                <h2>Dados do aluno</h2>
+                <hr>
+            </div>
+            <br>
+            <div name="formulario">
+                <form method="POST" name="form">
+                    <label><strong>Matrícula</strong></label>
+                    <input type="text" name="matricula" class="input" required name="matricula" />
+                    <br>
+                    <label>Nome</label>
+                    <input type="text" name="nome" class="input" size="40" />
+                    <label>CPF</label>
+                    <input type="text" name="cpf" class="input" id="#cpf" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" placeholder="000.000.000-00" title="Digite o CPF corretamente" />
+                    <label>RG</label>
+                    <input type="text" name="rg" class="input" id="rg" required pattern="^(\d{1}\.\d{3}\.\d{3}$" placeholder="0.000.000" title="Digite o RG corretamente"/>
+                    <br>
+                    <label>Dt. Nasc</label>
+                    <input type="date" name="data" class="input" />
+
+                    <label>Sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+
+                    <label>Telefone</label>
+                    <input type="tel" name="tel" class="input" id="tel" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(xx)xxxx-xxxx" />
+                    <label>Celular</label>
+                    <input type="tel" name="cel" class="input" id="cel" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(xx)9xxxx-xxxx"/>
+                    <br>
+                    <label>Email</label>
+                    <input type="email" name="email" class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@email.com" />
+
+                    <hr>
+                    <h2>Dados do responsável</h2>
+                    <hr>
+                    <label>Nome</label>
+                    <input type="text" name="nome" class="input" size="40" />
+                    <label>CPF</label>
+                    <input type="text" name="cpf" class="input" id="cpf" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" placeholder="000.000.000-00" title="Digite o CPF corretamente" />
+                    <label>RG</label>
+                    <input type="text" name="rg" class="input" id="rg" required pattern="^(\d{1}\.\d{3}\.\d{3}$" placeholder="0.000.000" title="Digite o RG corretamente" />
+                    <br>
+                    <label>Email</label>
+                    <input type="email" name="email" class="input" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@email.com" />
+                    <label>Dt. Nasc</label>
+                    <input type="date" name="data" class="input" />
+                    <label>Celular</label>
+                    <input type="tel" name="cel" class="input" name="cel" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(xx)9xxxx-xxxx" />
+
+                    <br>
+                    <br>
+
+                    <div class="botoes">
+                        <input type="submit" name="salvar" value="Salvar" class="btn" />
+                        <input type="submit" name="editar" value="Editar" class="btn" />
+                        <input type="reset" name="excluir" value="Excluir" class="btn" />
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
