@@ -64,3 +64,17 @@ body {
     width: 272px;
     margin: auto;
 }
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pesquisa input {
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
