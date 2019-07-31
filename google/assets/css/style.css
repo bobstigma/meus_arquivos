@@ -141,40 +141,42 @@ footer {
     background: #f2f2f2;
 }
 
-.footer-header {
+.footer_cab {
     border-top: 1px solid #e4e4e4;
     line-height: 40px;
-    min-width: 980px;
+    font-size: 15px;
 }
 
-.footer-header span {
+.footer_cab span {
     margin-left: 30px;
 }
 
-.footer-settings {
+.footer_links {
+    display: flex;
     border-top: 1px solid #e4e4e4;
     line-height: 40px;
 }
 
-.footer-settings a {
+.footer_links a {
     color: #5F6368;
     font-size: 13px;
 }
 
-.footer-settings a:hover {
+.footer_links a:hover {
     text-decoration: underline;
 }
 
-.span-left {
+#span_esquerda {
     float: left;
 }
 
-.span-left a,
-.span-right a {
+.span_esquerda,
+.span_direita a {
+    text-decoration: none;
     margin-left: 30px;
 }
 
-.span-right {
+#span_direita {
     float: right;
     margin-right: 30px;
 }
