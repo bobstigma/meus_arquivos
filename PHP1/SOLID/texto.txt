@@ -1,0 +1,18 @@
+S - Single Responsibility Principle (Principio da responsabilidade unica)
+O - Open-Closed Principle (Principio Aberto-Fechado)
+L - Liskov Subustitution Principle (Principio da substituição de Liskov)
+I - Interface Segregation Principle (Principio da segregação da Interface)
+D - Dependency Inversion Principle (Principio da inversão da dependencia)
+
+Seguindo os principios vc terá um código bem feito, solido e bem estruturado
+
+S
+------------------------------------------------
+Utlizar classes com sua determinada ação, por exemplo usuario, parte do banco do usuario
+Alta acoplagem
+Classes cada vez maiores
+
+O
+--------------------------------------------------
+Objetos, classes e entidades devem estar abertos para extensão e fechadas para modificação
+
