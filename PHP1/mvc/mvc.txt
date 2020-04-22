@@ -1,0 +1,15 @@
+M - MODEL
+V - VIEW
+C - CONTROLLER
+
+Router = ROTA
+
+- o usuario requisita a url site.com.br/sobre
+- o mvc vai verificar se a ROTA está estabelecida, caso não estabeleca ele vai para uma página 404 por exemplo
+- se a rota for estabelecida o mvc vai madar a requisição para o CONTROLLER da ROTA
+    * Carregar um VIEW (A parte gráfica de um sistema)
+    * Chamar um MODEL (Uma classe que tem relação com o banco de dados)
+
+CONTROLLER
+- MODEL
+- VIEW
