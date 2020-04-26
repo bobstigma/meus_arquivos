@@ -1,7 +1,7 @@
 <?= $render('header', ['loggedUser'=>$loggedUser]); ?>
 
 <section class="container main">
-        <?= $render('sidebar');?>
+    <?= $render('sidebar', ['activeMenu'=>'home']); ?>
         <section class="feed mt-10">
         <div class="row">
             <div class="column pr-5">
@@ -49,5 +49,3 @@
 </section>
 
 <?= $render('footer'); ?>
-
-<!-- 04:58 -->

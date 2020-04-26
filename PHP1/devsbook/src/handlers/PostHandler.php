@@ -22,6 +22,66 @@ class PostHandler {
         }
     }
 
+    public function _postListToObject($postsList, $loggedUserId){
+        $posts = [];
+        foreach ($postsList as $postItem) {
+            $newPost = new Post();
+            $newPost->id = $postItem['id'];
+            $newPost->type = $postItem['type'];
+            $newPost->created_at = $postItem['created_at'];
+            $newPost->body = $postItem['body'];
+            $newPost->mine = false;
+
+            if($postItem['id_user'] == $loggedUserId){
+                $newPost->mine = true;
+            }
+
+            //4 - preencher as informações adicionais no post
+            $newUser = User::select()->where('id', $postItem['id_user'])->one();
+            $newPost->user = new User();
+            $newPost->user->id = $newUser['id'];
+            $newPost->user->name = $newUser['name'];
+            $newPost->user->avatar = $newUser['avatar'];
+
+            //TODO> 4.1 Preencher as informações de LIKE
+            $newPost->likeCount = 0;
+            $newPost->liked = false;
+
+
+            //TODO> 4.2 Preencher as informações de COMENTARIOS
+            $newPost->comments = [];
+
+            $posts[] = $newPost;
+        }
+
+        return $posts;
+    }
+
+    public static function getUserFeed($idUser, $page, $loggedUserId){
+        $perPage = 2;
+
+        $postsList = Post::select()
+            ->where('id_user', $idUser)
+            ->orderBy('created_at', 'desc')
+            ->page($page, $perPage)
+        ->get();
+
+        $total = Post::select()
+            ->where('id_user', $idUser)
+        ->count();
+        $PageCount = ceil($total/$perPage);
+
+        //3 - transformar o resultado em objetos de models
+        $posts = self::_postListToObject($postsList, $loggedUserId);
+        
+        //5 - retornar o resultado
+        return [
+            'posts' => $posts,
+            'pageCount' => $PageCount,
+            'currentPage' => $page
+        ];
+    }
+
     public static function getHomeFeed($idUser, $page){
         $perPage = 2;
 
@@ -46,36 +106,7 @@ class PostHandler {
         $PageCount = ceil($total/$perPage);
 
         //3 - transformar o resultado em objetos de models
-        $posts = [];
-        foreach ($postsList as $postItem) {
-            $newPost = new Post();
-            $newPost->id = $postItem['id'];
-            $newPost->type = $postItem['type'];
-            $newPost->created_at = $postItem['created_at'];
-            $newPost->body = $postItem['body'];
-            $newPost->mine = false;
-
-            if($postItem['id_user'] == $idUser){
-                $newPost->mine = true;
-            }
-
-            //4 - preencher as informações adicionais no post
-            $newUser = User::select()->where('id', $postItem['id_user'])->one();
-            $newPost->user = new User();
-            $newPost->user->id = $newUser['id'];
-            $newPost->user->name = $newUser['name'];
-            $newPost->user->avatar = $newUser['avatar'];
-
-            //TODO> 4.1 Preencher as informações de LIKE
-            $newPost->likeCount = 0;
-            $newPost->liked = false;
-
-
-            //TODO> 4.2 Preencher as informações de COMENTARIOS
-            $newPost->comments = [];
-
-            $posts[] = $newPost;
-        }
+        $posts = self::_postListToObject($postsList, $idUser);
         
         //5 - retornar o resultado
         return [
@@ -84,6 +115,27 @@ class PostHandler {
             'currentPage' => $page
         ];
 
+    }
+
+    public function getPhotosFrom($idUser){
+        $photosData = Post::select()
+            ->where('id_user', $idUser)
+            ->where('type', 'photo')
+        ->get();
+
+        $photos = [];
+
+        foreach($photosData as $photo){
+            $newPost = new Post();
+            $newPost->id = $photo['id'];
+            $newPost->type = $photo['type'];
+            $newPost->created_at = $photo['created_at'];
+            $newPost->body = $photo['body'];
+
+            $photos[] = $newPost;
+        }
+
+        return $photos;
     }
 
 }
